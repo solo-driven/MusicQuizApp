@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Search Bar -->
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search for tracks or albums"
+        android:inputType="text" />
+
+    <!-- Option Selector -->
+    <RadioGroup
+        android:id="@+id/search_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/radio_tracks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tracks"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radio_albums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Albums" />
+    </RadioGroup>
+
+    <!-- Search Button -->
+    <Button
+        android:id="@+id/button_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:layout_marginTop="8dp" />
+
+    <!-- RecyclerView for Search Results -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_results"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

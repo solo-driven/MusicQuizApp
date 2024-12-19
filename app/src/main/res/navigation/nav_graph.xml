@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/searchFragment">
+
+    <!-- Search Fragment -->
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.musicquizapp.ui.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search" />
+
+
+    <!-- Playlist Fragment -->
+    <fragment
+        android:id="@+id/playlistFragment"
+        android:name="com.example.musicquizapp.ui.PlaylistFragment"
+        android:label="Playlist"
+        tools:layout="@layout/fragment_playlist" />
+
+    <!-- Quiz Fragment -->
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.example.musicquizapp.ui.QuizFragment"
+        android:label="Quiz"
+        tools:layout="@layout/fragment_quiz" />
+
+    <!-- Add other fragments as needed -->
+
+</navigation>
